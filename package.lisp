@@ -1,5 +1,10 @@
 ;;;; package.lisp
 
 (defpackage #:config
-  (:use #:cl))
+  (:use #:cl)
+  (:export
+   #:get-configuration
+   #:make-configuration-file
+   #:get-configuration-file-path
+   #:get-configurations-directory))
 
