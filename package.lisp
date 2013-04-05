@@ -8,5 +8,6 @@
    #:get-configuration-file-path
    #:get-configurations-directory
    #:list-configuration-files
-   #:set-configuration))
+   #:set-configuration
+   #:delete-configuration-file))
 

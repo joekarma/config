@@ -33,5 +33,5 @@ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGE."
   :components ((:file "package")
                (:file "config"))
-  :depends-on (#:cl-fad #:alexandria))
+  :depends-on (#:cl-fad #:alexandria #:osicat))
 

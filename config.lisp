@@ -22,7 +22,8 @@
 (defun make-configuration-file (system &optional configurations-alist)
   (let ((path (get-configuration-file-path system))
         (*print-pretty* t))
-    (alexandria:write-string-into-file (write-to-string configurations-alist) path)))
+    (alexandria:write-string-into-file (write-to-string configurations-alist) path)
+    (nix:chmod path #o600)))
 
 (defun set-configuration (system key value)
   (let ((config (get-configuration system)))
